@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .header, .footer {
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .content {
+            display: flex;
+            flex: 1;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: lightblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .main-content {
+            flex: 1;
+            background-color: lightgreen;
+            padding: 20px;
+        }
+        .sidebar-menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sidebar-menu div {
+            background-color: grey;
+            padding: 10px;
+            margin: 5px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Cabeçalho</div>
+        <div class="content">
+            <div class="sidebar">
+                <div class="sidebar-menu">
+                    <div>Barra Lateral</div>
+                
+                </div>
+            </div>
+            <div class="main-content">Área de Conteúdo Principal</div>
+        </div>
+        <div class="footer">Rodapé</div>
+    </div>
+</body>
+</html>
